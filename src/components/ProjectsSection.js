@@ -8,14 +8,14 @@ const projects = [
     title: "Gourmet Guide",
     description:
       "A recipe manager application",
-    getImageSrc: () => require("../images/photo1.jpg"),
+    getImageSrc:"https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     link: "https://github.com/Puffy3/Gourmet-Guide.git",
   },
   {
     title: "Textify",
     description:
       "A pesrsonal voice powered chat assistant",
-    getImageSrc: () => require("../images/photo2.jpg"),
+    getImageSrc:"https://images.pexels.com/photos/1111370/pexels-photo-1111370.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     link: "https://github.com/Puffy3/Textify.git",
   },
   // {
@@ -54,7 +54,7 @@ const ProjectsSection = () => {
             key={project.title}
             title={project.title}
             description={project.description}
-            imageSrc={project.getImageSrc()}
+            imageSrc={project.getImageSrc}
             link={project.link}
           />
         ))}
